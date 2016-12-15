@@ -27,8 +27,9 @@ class ClickToPartial(sublime_plugin.TextCommand):
         if matched:
           partial_path = matched.group(1)
           file_name = partial_path
-
-
+        else:
+          return
+      
       # Tries to open absolute path
       pattern = re.compile("(.+)\/.+$")
       dir_path = pattern.match(partial_path)
