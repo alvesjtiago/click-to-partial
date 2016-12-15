@@ -14,17 +14,19 @@ class ClickToPartial(sublime_plugin.TextCommand):
       line_range = self.view.line(region)
       line_content = self.view.substr(line_range).strip()
 
-      matched = self.get_string(line_content)
+      matched = self.get_quoted_string(line_content)
       if matched:
         partial_path = matched.group(1)
-        print(partial_path)
         file_name = partial_path
         pattern = re.compile(".+\/(.+)$")
         file_name_tmp = pattern.match(partial_path)
         if file_name_tmp:
           file_name = file_name_tmp.group(1)
       else:
-        return
+        matched = self.get_symbol(line_content)
+        if matched:
+          partial_path = matched.group(1)
+          file_name = partial_path
 
 
       # Tries to open absolute path
@@ -57,8 +59,15 @@ class ClickToPartial(sublime_plugin.TextCommand):
       self.look_for_file(file_name, base_folder)
       return
 
-    def get_string(self, line_content):
+    def get_quoted_string(self, line_content):
       pattern = re.compile("^.*render.*?['\"](.*?)['\"].*$")
+      matched = pattern.match(line_content)
+      if matched:
+        return matched
+      return False
+
+    def get_symbol(self, line_content):
+      pattern = re.compile("^.*render.*?:(.*?),? .*$")
       matched = pattern.match(line_content)
       if matched:
         return matched
