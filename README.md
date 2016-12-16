@@ -8,19 +8,17 @@ Click to partial has been submitted to [Package Control](https://packagecontrol.
 
 _macOS_
 ```
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-curl -o "Default (OSX).sublime-mousemap" https://raw.githubusercontent.com/alvesjtiago/click-to-partial/master/Default%20(OSX).sublime-mousemap
-curl -O https://raw.githubusercontent.com/alvesjtiago/click-to-partial/master/click_to_partial.py
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+git clone https://github.com/alvesjtiago/click-to-partial.git
 ```
 
 _Ubuntu_
 ```
-cd ~/.config/sublime-text-3/Packages/User
-curl -o "Default (OSX).sublime-mousemap" https://raw.githubusercontent.com/alvesjtiago/click-to-partial/master/Default%20(OSX).sublime-mousemap
-curl -O https://raw.githubusercontent.com/alvesjtiago/click-to-partial/master/click_to_partial.py
+cd ~/.config/sublime-text-3/Packages
+git clone https://github.com/alvesjtiago/click-to-partial.git
 ```
 
-Or manually copy the click_to_partial.py and Default (OSX).sublime-mousemap.py files to your User Packages folder.
+Or manually create a folder named "click-to-partial" on your Packages folder and copy the content of this repo to it.
 
 
 ## Contribute
