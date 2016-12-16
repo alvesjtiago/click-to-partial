@@ -1,0 +1,8 @@
+[
+  {
+      "button": "button1", 
+      "count": 1, 
+      "modifiers": ["alt"],
+      "command": "click_to_partial"
+  }
+]
