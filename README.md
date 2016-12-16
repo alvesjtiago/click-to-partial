@@ -21,19 +21,13 @@ And:
 _macOS_
 ```
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-git clone --depth=1 git://github.com/alvesjtiago/click-to-partial.git
+curl -O https://raw.githubusercontent.com/alvesjtiago/click-to-partial/master/click_to_partial.py
 ```
 
 _Ubuntu_
 ```
 cd ~/.config/sublime-text-3/Packages/User
-git clone --depth=1 git://github.com/alvesjtiago/click-to-partial.git
-```
-
-_Windows_
-```
-cd "%APPDATA%\Sublime Text 3\Packages/User"
-git clone --depth=1 git://github.com/alvesjtiago/click-to-partial.git
+curl -O https://raw.githubusercontent.com/alvesjtiago/click-to-partial/master/click_to_partial.py
 ```
 
 
