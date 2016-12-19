@@ -9,13 +9,19 @@ Click to partial has been submitted to [Package Control](https://packagecontrol.
 _macOS_
 ```
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-git clone https://github.com/alvesjtiago/click-to-partial.git
+git clone --depth=1 https://github.com/alvesjtiago/click-to-partial.git
 ```
 
 _Ubuntu_
 ```
 cd ~/.config/sublime-text-3/Packages
-git clone https://github.com/alvesjtiago/click-to-partial.git
+git clone --depth=1 https://github.com/alvesjtiago/click-to-partial.git
+```
+
+_Windows_
+```
+cd "%APPDATA%\Sublime Text 3\Packages\User"
+git clone --depth=1 https://github.com/alvesjtiago/click-to-partial.git
 ```
 
 Or manually create a folder named "click-to-partial" on your Packages folder and copy the content of this repo to it.
