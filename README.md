@@ -1,6 +1,6 @@
 # Click To Partial
 
-A Sublime Text 3 plugin to alt + click a partial path and open it.
+A Sublime Text 3 plugin to cmd + shift + click a partial path and open it.
 
 ## Installation
 

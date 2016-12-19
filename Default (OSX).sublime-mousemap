@@ -2,7 +2,7 @@
   {
       "button": "button1", 
       "count": 1, 
-      "modifiers": ["alt"],
+      "modifiers": ["super","shift"],
       "command": "click_to_partial"
   }
 ]
