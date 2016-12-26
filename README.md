@@ -20,7 +20,7 @@ git clone --depth=1 https://github.com/alvesjtiago/click-to-partial.git
 
 _Windows_
 ```
-cd "%APPDATA%\Sublime Text 3\Packages\User"
+cd "%APPDATA%\Sublime Text 3\Packages"
 git clone --depth=1 https://github.com/alvesjtiago/click-to-partial.git
 ```
 
