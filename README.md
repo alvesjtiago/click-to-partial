@@ -4,7 +4,8 @@ A Sublime Text 3 plugin to cmd + shift + click (OSX) or ctrl + shift + click (Li
 
 ## Installation
 
-Click to partial has been submitted to [Package Control](https://packagecontrol.io) and is waiting to be approved. This README file will be updated once it is possible to install Hover Preview via the Package Control.
+Click To Partial has been approved on Package Control! 🎉
+Search for "Click To Partial" and install.
 
 _macOS_
 ```
